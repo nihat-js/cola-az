@@ -16,3 +16,13 @@ hamburger.addEventListener('click',()=>{
     }
 
 })
+
+
+document.body.addEventListener('wheel',(e)=>{
+    let height = document.body.scrollHeight
+    let currentHeight = e.pageY
+
+    percentage = currentHeight / height  * 100
+    document.querySelector('.line').style.width = percentage + "%"
+
+})

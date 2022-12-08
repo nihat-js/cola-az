@@ -32,6 +32,8 @@ html {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,11 +66,24 @@ nav .search input {
   width: 0;
 }
 
+.line {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #000;
+}
+.line .progress {
+  background-color: #dd0022;
+  height: 8px;
+}
+
 .intro img {
   width: 100%;
 }
 
 .brands .first {
+  width: 100%;
   display: flex;
   align-items: stretch;
 }
@@ -156,4 +171,13 @@ footer .box .links a {
 }
 footer .box .copyright p {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .brands .first {
+    flex-direction: column;
+  }
+  .youtube {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,18 +1,178 @@
-*{margin:0;padding:0;box-sizing: border-box;}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.left-nav{
+	position: fixed;
+	top : 70px;
+	height: 100vh;
+	background-color: #000;
+	padding: 3rem 2rem ;
+	.content {
+		ul{
+			li {
+				margin-bottom: 2rem;
+				a{
+					color : #fff;
+				}
+			}
+		}
+	}
+}
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    padding: 1rem 1rem;
-    .menu{}
-    .logo{
-        img {height: 32px;}
-    }
-    .search{
-        img {
-            height: 32px;
-        }
-    }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+	padding: 1rem 2rem;
+
+	.menu {
+		cursor: pointer;
+	}
+
+	.logo {
+		img {
+			height: 32px;
+		}
+	}
+
+	.search {
+		display: flex;
+		align-items: center;
+		img {
+			height: 32px;
+			cursor: pointer;
+		}input {
+			border:none;
+			background: transparent;
+			border-bottom: 2px solid #fff;
+			font-size: 1.2rem;
+			margin-left: 1rem;
+			width: 0;
+		}
+	}
+}
+
+.intro {
+	img {
+		width: 100%;
+	}
+}
+
+.brands {
+	.first {
+		display: flex;
+		align-items: stretch;
+		.right{
+
+		}
+	}
+	.second {
+		img {
+			width: 33%;
+		}
+	}
+}
+
+
+.history{
+	padding: 1.5rem 0 ;
+	.content {
+		max-width: 1000px;
+		margin: auto;
+		.logo {
+			text-align: center;
+			img {
+				width: 160px;
+			}
+		}
+	}
+}
+
+
+.youtube{
+	background-color: #dd0022;
+	.content {
+		max-width: 1200px;
+		margin: auto;
+	}
+}
+
+
+.sponsors{
+	.content{
+		max-width: 1200px;
+		margin: auto;
+		padding: 4rem 0 2rem 0;
+		.main {
+			border-bottom: 1px solid #999;
+			display: flex;
+			justify-content: center;
+			.container {
+				display: flex;
+				.links {
+					font-size: 1.5rem;
+					line-height: 2rem;
+					margin-right: 3rem;
+					cursor: pointer;
+				}
+				.active{
+					border-bottom: 3px solid #dd0022;
+					font-weight: bold;
+				}
+			}
+		}
+		.sub {
+			margin-top: 2rem;
+			.follow-us{
+				text-align: center;
+				img {
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}
+
+
+footer {
+	background-color: #000;
+
+	.logo {
+		padding: 1rem 0 ;
+		width: 280px;
+		margin: auto;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.box {
+		display: flex;
+		justify-content: space-between;
+		padding:  0 4rem;
+		.links {
+			padding: 0 0 2rem 0;
+			a {
+				color: #fff;
+				margin-right: 1.25rem;
+			}
+			
+		}
+		.copyright{
+			p {
+				color : #fff;
+			}
+		}
+
+	}
 }

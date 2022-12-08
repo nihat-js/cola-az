@@ -1,0 +1,18 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 1rem;
+    .menu{}
+    .logo{
+        img {height: 32px;}
+    }
+    .search{
+        img {
+            height: 32px;
+        }
+    }
+}

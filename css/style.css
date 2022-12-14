@@ -15,9 +15,9 @@ html {
 
 .left-nav {
   position: fixed;
-  top: 70px;
+  top: 50px;
   height: 100vh;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.917);
   padding: 3rem 2rem;
 }
 .left-nav .content ul li {
@@ -43,8 +43,9 @@ nav {
 nav .menu {
   cursor: pointer;
 }
-nav .menu img {
-  width: 24px;
+nav .menu span {
+  color: #fff;
+  font-size: 1.5rem;
 }
 nav .logo img {
   height: 32px;
@@ -60,6 +61,8 @@ nav .search img {
 nav .search input {
   border: none;
   background: transparent;
+  outline: none;
+  color: #fff;
   border-bottom: 2px solid #fff;
   font-size: 1.2rem;
   margin-left: 1rem;
@@ -80,29 +83,34 @@ nav .search input {
 
 .intro img {
   width: 100%;
+  vertical-align: middle;
 }
 
 .brands .first {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.brands .first .left {
+  overflow: hidden;
+}
+.brands .first .right {
+  overflow: hidden;
+}
+.brands .first img {
   width: 100%;
-  display: flex;
-  align-items: stretch;
+  vertical-align: middle;
+  transition: all 3s;
+}
+.brands .first img:hover {
+  transform: scale(1.2);
+}
+.brands .second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .brands .second img {
-  width: 33%;
-}
-
-.history {
-  padding: 1.5rem 0;
-}
-.history .content {
-  max-width: 1000px;
-  margin: auto;
-}
-.history .content .logo {
-  text-align: center;
-}
-.history .content .logo img {
-  width: 160px;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .youtube {
@@ -111,6 +119,10 @@ nav .search input {
 .youtube .content {
   max-width: 1200px;
   margin: auto;
+}
+.youtube .content iframe {
+  width: 100%;
+  height: 500px;
 }
 
 .sponsors .content {
@@ -144,6 +156,10 @@ nav .search input {
 }
 .sponsors .content .sub .follow-us img {
   margin-right: 1rem;
+  cursor: pointer;
+}
+.sponsors .content .sub .follow-us img:hover {
+  opacity: 0.7;
 }
 
 footer {
@@ -175,9 +191,13 @@ footer .box .copyright p {
 
 @media screen and (max-width: 768px) {
   .brands .first {
-    flex-direction: column;
+    grid-template-columns: 100%;
   }
-  .youtube {
+  .brands .second {
+    grid-template-columns: 100%;
+  }
+  .youtube .content iframe {
     width: 100% !important;
+    height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}

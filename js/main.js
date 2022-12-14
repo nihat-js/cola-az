@@ -13,6 +13,7 @@ hamburger.addEventListener('click', () => {
     } else {
         leftNav.classList.add('d-none')
         hamburger.src = "img/menu.png"
+
     }
 
 })
